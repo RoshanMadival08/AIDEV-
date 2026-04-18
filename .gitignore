@@ -1,0 +1,30 @@
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.env
+*.egg-info
+# Node
+node_modules/
+.next/
+dist/
+build/
+*.log
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+# OS
+.DS_Store
+Thumbs.db
+# Test
+test.txt

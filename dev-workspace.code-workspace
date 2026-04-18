@@ -1,0 +1,29 @@
+{
+  "folders": [
+    {
+      "name": "🔧 Spring Services",
+      "path": "backend/spring-services"
+    },
+    {
+      "name": "🤖 AI Agents",
+      "path": "backend/ai-services"
+    },
+    {
+      "name": "🎨 Frontend",
+      "path": "frontend"
+    },
+    {
+      "name": "🐳 Infrastructure",
+      "path": "infrastructure"
+    },
+    {
+      "name": "📚 Docs",
+      "path": "docs"
+    },
+    {
+      "name": "⚡ Scripts",
+      "path": "scripts"
+    }
+  ],
+  "settings": {}
+}
