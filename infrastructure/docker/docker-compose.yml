@@ -1,0 +1,44 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    container_name: aidev-postgres
+    environment:
+      POSTGRES_DB: aidev
+      POSTGRES_USER: aidev
+      POSTGRES_PASSWORD: aidev123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_/var/lib/postgresql/data
+    networks:
+      - aidev-network
+  mongodb:
+    image: mongo:7
+    container_name: aidev-mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: aidev
+      MONGO_INITDB_ROOT_PASSWORD: aidev123
+      MONGO_INITDB_DATABASE: aidev
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_/data/db
+    networks:
+      - aidev-network
+  redis:
+    image: redis:7-alpine
+    container_name: aidev-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_/data
+    networks:
+      - aidev-network
+volumes:
+  postgres_
+  mongodb_data:
+  redis_
+networks:
+  aidev-network:
+    driver: bridge
